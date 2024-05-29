@@ -1,6 +1,7 @@
-import utils from './utils.js';
+import { uploadPhoto, createUser } from './utils.js';
+
 export default function handleProfileSignup() {
-  const promise = Promise.all([utils.uploadPhoto(), utils.createUser()]);
+  const promise = Promise.all([uploadPhoto(), createUser()]);
 
   promise
     .then((data) => {
