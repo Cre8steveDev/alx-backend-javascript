@@ -1,13 +1,13 @@
-import { uploadPhoto, createUser } from './utils.js';
+/* eslint-disable no-unused-vars */
+import { uploadPhoto, createUser } from './utils';
 
 export default function handleProfileSignup() {
   const promise = Promise.all([uploadPhoto(), createUser()]);
 
   return promise
     .then((data) => {
-      const body = data[0].body;
-      const firstName = data[1].firstName;
-      const lastName = data[1].lastName;
+      const { body } = data[0];
+      const { firstName, lastName } = data[1];
 
       console.log(`${body} ${firstName} ${lastName}`);
     })
