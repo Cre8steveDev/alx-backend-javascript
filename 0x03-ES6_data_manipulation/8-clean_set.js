@@ -1,5 +1,5 @@
 export default function cleanSet(set, startString) {
-  if (startString === '') return '';
+  //   if (startString === '') return '';
   const myStr = [];
   for (const item of set) {
     if (item.startsWith(startString)) {
