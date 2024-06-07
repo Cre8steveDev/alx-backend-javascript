@@ -1,7 +1,7 @@
 export const weakMap = new WeakMap();
 
 export function queryAPI(endpoint) {
-  // Defien variable to hold the number of times
+  // Define variable to hold the number of times
   // the end point is called my tieing it to
   // the weak map
   let numOfCalls = 0;
